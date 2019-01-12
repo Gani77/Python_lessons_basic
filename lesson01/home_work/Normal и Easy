@@ -1,0 +1,70 @@
+
+easy:
+
+#1
+
+a = int(input())
+while a//10 >= 1:
+    print(a%10)
+    a = a //10
+print(a)
+
+#2
+
+a = int(input())
+b = int(input())
+c = a
+a = b
+print(a)
+print(c)
+
+#3
+
+age = int(input("Введите свой возраст:  "))
+if age >= 18:
+    print("Доступ разрешен")
+else:
+    print("Извините,пользование данным ресурсом только с 18 лет")
+    
+normal:
+
+#1
+
+a = int(input())
+max = 0
+b = 0
+while a//10 >=1:
+    b = a%10 
+    if b > max:
+        max = b
+    a = a//10
+if a>max:
+    print(a)
+else:
+    print(max)
+    
+#2 
+
+a = int(input())
+b = int(input())
+a,b = b,a
+print(a)
+print(b)
+
+#3
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=b**2-4*a*c
+print("d =",d)
+if d<0:
+    print("нет решений")
+if d==0:
+    x=(-b+d**0.5)/2*a
+    print(x)
+if d>0:
+    x1=(-b+d**0.5)/2*a
+    print("x1 =",x1)
+    x2=(-b-d**0.5)/2*a
+    print("x2 =",x2)
